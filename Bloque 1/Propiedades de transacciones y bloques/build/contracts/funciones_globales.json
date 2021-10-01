@@ -1,0 +1,320 @@
+{
+  "contractName": "funciones_globales",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "Now",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"Now\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"project:/contracts/funciones_globales.sol\":\"funciones_globales\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/funciones_globales.sol\":{\"keccak256\":\"0x1f447fddc846ddc8bea3897c7df2f2f7c6e1bef29b59bc066a148030b325a6d7\",\"urls\":[\"bzz-raw://8f3f00a8d3eb82f6f6fb120d6aed931fdea5053386cb8698c541a418c98a81f6\",\"dweb:/ipfs/QmZUwcSJFQxUttgqse2dzWuxVZBGYFXPeLyS1UKJwVygCX\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b5060868061001e6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c806344d4fd1914602d575b600080fd5b60336049565b6040518082815260200191505060405180910390f35b60004290509056fea265627a7a723158202ed675f96d5934b1d15700dc11a5a2a1fde4463ca911c4a083bea47edad3119264736f6c63430005100032",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c806344d4fd1914602d575b600080fd5b60336049565b6040518082815260200191505060405180910390f35b60004290509056fea265627a7a723158202ed675f96d5934b1d15700dc11a5a2a1fde4463ca911c4a083bea47edad3119264736f6c63430005100032",
+  "sourceMap": "35:107:2:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;35:107:2;;;;;;;",
+  "deployedSourceMap": "35:107:2:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;35:107:2;;;;;;;;;;;;;;;;;;;70:69;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;105:4;128:3;121:10;;70:69;:::o",
+  "source": "pragma solidity >=0.4.4 <0.7.0;\r\n\r\ncontract funciones_globales {\r\n    function Now() public view returns(uint){\r\n        return now;\r\n    }\r\n}",
+  "sourcePath": "C:\\Users\\lucas\\Documents\\Personal\\Technology\\Blockchain\\Udemy\\SmartContratcts y Blockchain con Solidity de la A a la Z\\Code\\solidity-udemy-course\\Bloque 1\\Propiedades de transacciones y bloques\\contracts\\funciones_globales.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/funciones_globales.sol",
+    "exportedSymbols": {
+      "funciones_globales": [
+        168
+      ]
+    },
+    "id": 169,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 159,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".4",
+          "<",
+          "0.7",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:31:2"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 168,
+        "linearizedBaseContracts": [
+          168
+        ],
+        "name": "funciones_globales",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 166,
+              "nodeType": "Block",
+              "src": "110:29:2",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 164,
+                    "name": "now",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 225,
+                    "src": "128:3:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "functionReturnParameters": 163,
+                  "id": 165,
+                  "nodeType": "Return",
+                  "src": "121:10:2"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 167,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "Now",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 160,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "82:2:2"
+            },
+            "returnParameters": {
+              "id": 163,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 162,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 167,
+                  "src": "105:4:2",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 161,
+                    "name": "uint",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "105:4:2",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "104:6:2"
+            },
+            "scope": 168,
+            "src": "70:69:2",
+            "stateMutability": "view",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 169,
+        "src": "35:107:2"
+      }
+    ],
+    "src": "0:142:2"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "project:/contracts/funciones_globales.sol",
+      "exportedSymbols": {
+        "funciones_globales": [
+          168
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            ">=",
+            "0.4",
+            ".4",
+            "<",
+            "0.7",
+            ".0"
+          ]
+        },
+        "id": 159,
+        "name": "PragmaDirective",
+        "src": "0:31:2"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            168
+          ],
+          "name": "funciones_globales",
+          "scope": 169
+        },
+        "children": [
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": false,
+              "kind": "function",
+              "modifiers": [
+                null
+              ],
+              "name": "Now",
+              "scope": 168,
+              "stateMutability": "view",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 160,
+                "name": "ParameterList",
+                "src": "82:2:2"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "constant": false,
+                      "name": "",
+                      "scope": 167,
+                      "stateVariable": false,
+                      "storageLocation": "default",
+                      "type": "uint256",
+                      "value": null,
+                      "visibility": "internal"
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "name": "uint",
+                          "type": "uint256"
+                        },
+                        "id": 161,
+                        "name": "ElementaryTypeName",
+                        "src": "105:4:2"
+                      }
+                    ],
+                    "id": 162,
+                    "name": "VariableDeclaration",
+                    "src": "105:4:2"
+                  }
+                ],
+                "id": 163,
+                "name": "ParameterList",
+                "src": "104:6:2"
+              },
+              {
+                "children": [
+                  {
+                    "attributes": {
+                      "functionReturnParameters": 163
+                    },
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "overloadedDeclarations": [
+                            null
+                          ],
+                          "referencedDeclaration": 225,
+                          "type": "uint256",
+                          "value": "now"
+                        },
+                        "id": 164,
+                        "name": "Identifier",
+                        "src": "128:3:2"
+                      }
+                    ],
+                    "id": 165,
+                    "name": "Return",
+                    "src": "121:10:2"
+                  }
+                ],
+                "id": 166,
+                "name": "Block",
+                "src": "110:29:2"
+              }
+            ],
+            "id": 167,
+            "name": "FunctionDefinition",
+            "src": "70:69:2"
+          }
+        ],
+        "id": 168,
+        "name": "ContractDefinition",
+        "src": "35:107:2"
+      }
+    ],
+    "id": 169,
+    "name": "SourceUnit",
+    "src": "0:142:2"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {
+    "4": {
+      "events": {},
+      "links": {},
+      "address": "0xbf21DF088cF321248C0a695a7Fc8e6Ac17728Fbf",
+      "transactionHash": "0x64dd99de9827382be5379cd14611e0cd192c68e6b088dc2a5ed3ad4e7677aecc"
+    }
+  },
+  "schemaVersion": "3.4.3",
+  "updatedAt": "2021-10-01T02:54:01.901Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
