@@ -2,7 +2,7 @@ pragma solidity >=0.4.4 < 0.7.0;
 pragma experimental ABIEncoderV2;
 
 contract Notas {
-    address professor;
+    address teacher;
 
     mapping (bytes32 => uint) evaluations;
     string[] revisions;
@@ -11,15 +11,15 @@ contract Notas {
     event RevisionAskedBy(string idStudent);
 
     constructor () public {
-        professor = msg.sender;
+        teacher = msg.sender;
     }
 
-    modifier professorOnly {
-        require (professor == msg.sender, "Solo el profesor puede evaluar");
+    modifier teacherOnly {
+        require (teacher == msg.sender, "Only teacher can evaluate");
         _;
     }
 
-    function Evaluate(string memory idStudent, uint grade) public professorOnly {
+    function Evaluate(string memory idStudent, uint grade) public teacherOnly {
         bytes32 hashStudent = keccak256(abi.encode(idStudent));
         evaluations[hashStudent] = grade;
         emit EvaluatedStudent(hashStudent);
@@ -35,7 +35,7 @@ contract Notas {
         emit RevisionAskedBy(idStudent);
     }
 
-    function GetRevisions() public view professorOnly returns(string[] memory){
+    function GetRevisions() public view teacherOnly returns(string[] memory){
         return revisions;
     }
 }
