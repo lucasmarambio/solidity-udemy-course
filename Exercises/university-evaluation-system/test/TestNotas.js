@@ -20,7 +20,7 @@ contract('Test new Notas', (accounts) => {
 
   it('should emit evaluated student event', async () => {
     const result = await notasInstance.Evaluate("Test", 2, { from: teacher });
-    assert.equal(result, 2, 'Student has a different note');
+    assert.equal(result.logs[0].event, 'EvaluatedStudent', 'Student has a different note');
   });
 
   // should succeed to GetRevisions
